@@ -1,0 +1,17 @@
+<div>
+    <div class="card">
+        <h1>
+            {{note.title}}
+        </h1>
+        <h3>
+            {{note.text}}
+        </h3>
+        <div>
+
+            <input type="checkbox" id="isMarkedCheckBox" (change)="toggleComplete($event)" [checked]="note.isCompleted"> Mark as complete
+        </div>
+    </div>
+
+</div>
+
+

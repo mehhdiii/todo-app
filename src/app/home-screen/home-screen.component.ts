@@ -11,7 +11,7 @@ export class HomeScreenComponent {
   // notes = NOTES; 
   notes: Note[] = [];
 
-  constructor(private notesService: NotesServiceService) {
+  constructor(private notesService: NotesServiceService){
     console.log('home-screen initializing')
     this.notesService.getNotes().subscribe(
       (resp: any) => {
